@@ -60,3 +60,20 @@ prev.addEventListener('click', () => {
     images[currentImage + 1].classList.add('hidden');
   }
 });
+
+function timer() {
+  if (currentImage === 0) {
+    currentImage = 2;
+    images[0].classList.add('hidden');
+    images[1].classList.add('hidden');
+    images[2].classList.remove('hidden');
+  } else {
+    currentImage -= 1;
+    images[currentImage].classList.remove('hidden');
+    images[currentImage + 1].classList.add('hidden');
+  }
+
+  return setTimeout(timer, 5000);
+}
+
+timer();
