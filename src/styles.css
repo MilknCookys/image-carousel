@@ -63,6 +63,65 @@ h6 {
 
 /* General CSS */
 
+body {
+  background-color: rgb(227, 227, 227);
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#carouselContainer {
+  background-color: white;
+  width: 1200px;
+  height: 600px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#mainContent {
+  display: flex;
+  justify-content: space-around;
+  /* gap: 5%; */
+}
+
+#frameContainer {
+  width: 1000px;
+  height: 500px;
+  overflow: hidden;
+  background-color: red;
+}
+
+#selectors {
+  display: flex;
+  gap: 5%;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+#selectors p {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
 h1 {
-  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+h1:hover {
+  font-weight: bolder;
 }
